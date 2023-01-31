@@ -1,12 +1,11 @@
 import React from "react";
-import Logo from "../static/logos/matesat.png";
 import { BsShopWindow } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 
 const NavBar = () => {
   return (
-    <nav className="container bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-90 border shadow-md rounded-md fixed mx-auto">
+    <nav className="container z-50 bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-90 border shadow-md rounded-md fixed mx-auto">
       <div className="flex flex-wrap items-center justify-between mx-auto">
         <div className=" flex justify-center items-center gap-2">
           <BsShopWindow className=" text-2xl" />
