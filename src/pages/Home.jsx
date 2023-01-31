@@ -24,14 +24,15 @@ const Home = () => {
           <ProductCart />
         </div>
         <div className=" w-full text-end mt-3">
-          <Link to="/" className="flex justify-end items-center gap-1 hover:text-gray-500">
+          <Link
+            to="/products"
+            className="flex justify-end items-center gap-1 hover:text-gray-500"
+          >
             Show All Products
             <BsArrowRight />
           </Link>
         </div>
       </div>
-
-      
 
     </>
   );
