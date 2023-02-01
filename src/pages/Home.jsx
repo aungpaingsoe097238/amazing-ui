@@ -18,10 +18,10 @@ const Home = () => {
           Latest Products
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-2 gap-3 ">
+          {/* <ProductCart />
           <ProductCart />
           <ProductCart />
-          <ProductCart />
-          <ProductCart />
+          <ProductCart /> */}
         </div>
         <div className=" w-full text-end mt-3">
           <Link
