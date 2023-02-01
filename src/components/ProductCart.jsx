@@ -2,8 +2,14 @@ import React from "react";
 import { BsStarFill } from "react-icons/bs";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import ProductDetail from "../components/model/ProductDetail";
 
 const ProductCart = () => {
+  const handleProductDetail = () => {
+    console.log("Detail");
+  };
+
   return (
     <>
       <div className="card relative flex flex-col gap-3">
@@ -12,7 +18,7 @@ const ProductCart = () => {
           <img
             src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
             alt=""
-            className=" h-[200px] md:-mt-[50%] hover:-rotate-12 transition  "
+            className=" h-[200px] hover:-rotate-12 transition  "
           />
         </div>
         {/* Title & Star */}
@@ -26,7 +32,7 @@ const ProductCart = () => {
             <BsStarFill className=" text-yellow-500" />
             <BsStarFill className=" text-yellow-500" />
             <BsStarFill className=" text-yellow-500" />
-            <span className="badge absolute top-1 left-1">5.5k</span>
+            <span className="badge absolute top-1 left-1 text-sm">5.5k</span>
           </span>
         </div>
         {/* Price */}
@@ -41,14 +47,18 @@ const ProductCart = () => {
           </p>
         </div>
         {/* Button */}
-        <div className="flex justify-end mt-auto gap-2">
-          <button type="button" className="btn-dark flex items-center gap-1">
+        <div className="flex justify-end mt-auto gap-2 flex-col lg:flex-row">
+          <button
+            type="button"
+            className="btn-dark flex justify-around items-center w-full"
+          >
             Add To Cart
             <MdOutlineAddShoppingCart className="text-xl" />
           </button>
           <button
             type="button"
-            className=" bg-sky-800 hover:bg-sky-900 focus:outline-none focus:ring-4 focus:ring-gray-300 px-3 py-2 rounded-lg text-white flex items-center gap-1"
+            className=" btn-primary flex justify-around items-center w-full"
+            onClick={handleProductDetail}
           >
             More Detail
             <BsArrowRight className="text-xl" />

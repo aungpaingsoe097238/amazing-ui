@@ -13,11 +13,11 @@ const Home = () => {
       </div>
 
       {/* Latest Products */}
-      <div className="flex flex-col justify-center items-center h-screen relative">
-        <div className=" absolute top-2 mx-auto text-2xl font-bold">
+      <div className="flex flex-col justify-center items-center lg:h-screen">
+        <div className=" top-2 mx-auto text-2xl font-bold my-5">
           Latest Products
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-3 ">
+        <div className="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-2 gap-3 ">
           <ProductCart />
           <ProductCart />
           <ProductCart />
